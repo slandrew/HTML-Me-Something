@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya SC');
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+img {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 400px;
+  }
+
+p {
+    font-size: 1em;
+    font-family: Alegreya SC;
+}
+
+h1 {
+    font-family: Alegreya SC;
+    font-size: 4em;
+    text-shadow: 2px 2px;
+}
+
+h3 {
+    font-family: Alegreya SC;
+    font-size: 2em;
+}
