@@ -88,6 +88,11 @@ li {
 p {
     font-size: 1em;
     text-align: justify;
+    margin-left: 20em;
+    margin-right: 20em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    min-width: 20em;
 }
 
 h1, h3 {
@@ -112,6 +117,7 @@ td, th {
 
 table{
     border-collapse: collapse;
+    float: center;
 }
 a:visited {
     color: black;
