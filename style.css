@@ -29,10 +29,17 @@ body {
     justify-content: space-around;
     min-width: 50em;
 }
+
 a.nav-link:visited
 {
    color: #f2d070;
    text-decoration: none;
+}
+a.nav-link:hover
+{
+    color: #f2d070;
+    text-decoration: none;
+    background: rgba(0, 0, 204, 0.3);
 }
 #sota-link{
     float: right;
@@ -68,6 +75,7 @@ li {
     line-height: 2em;
     text-decoration: none;
     text-align: center;
+    color: #f2d070;
   }
 
 .header-image img{
@@ -88,11 +96,7 @@ li {
 p {
     font-size: 1em;
     text-align: justify;
-    margin-left: 20em;
-    margin-right: 20em;
     margin-top: 5em;
-    margin-bottom: 5em;
-    min-width: 20em;
 }
 
 h1, h3 {
@@ -117,7 +121,8 @@ td, th {
 
 table{
     border-collapse: collapse;
-    float: center;
+    margin-left:auto; 
+    margin-right:auto;
 }
 a:visited {
     color: black;
