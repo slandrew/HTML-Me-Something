@@ -141,3 +141,7 @@ table{
 a:visited {
     color: black;
 }
+
+footer {
+    float: center;
+}
