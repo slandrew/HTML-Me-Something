@@ -114,7 +114,8 @@ h3 {
 td, th {
     border: 2px solid black;
     width: 8em;
-    height: 1em; 
+    height: 1em;
+    min-width: 4em;
     text-align: center;
     font-family: Alegreya SC;
 }
@@ -123,6 +124,19 @@ table{
     border-collapse: collapse;
     margin-left:auto; 
     margin-right:auto;
+}
+
+.table-button {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/brick.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    border: 0;
+}
+.table-button:hover {
+    background-image: url(images/brick.jpg);
+    opacity: 1;
 }
 a:visited {
     color: black;

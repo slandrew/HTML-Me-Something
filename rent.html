@@ -4,12 +4,12 @@
         <link href="style.css" rel="stylesheet">
         <div class="header">
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link" id="home-link"><img id="home-header" src="images/COA.png"></a></li>
-                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="/" class="nav-link" id="home-link"><img id="home-header" src="images/COA.png"></a></li>
+                <li><a href="/#about" class="nav-link">About</a></li>
                 <li><a href="menu.html" class="nav-link">Menu</a></li>
                 <li><a href="rent.html" class="nav-link">Rent a Room</a></li>
-                <li><a href="index.html#location" class="nav-link">Location</a></li>
-                <li><a href="index.html#photos" class="nav-link">Photos</a></li>
+                <li><a href="/#location" class="nav-link">Location</a></li>
+                <li><a href="/#photos" class="nav-link">Photos</a></li>
                 <li id="sota-link"><a href="https://www.shroudoftheavatar.com" target="_blank">
                 <img id="sota-header" src="https://d2sx9mrt4zumaq.cloudfront.net/wp-content/themes/portalarium_sota/assets/ShroudLogoMenu.png"></a></li>
             </ul>
@@ -23,22 +23,22 @@
         <div>
             <h1>Request a Reservation</h1>
             <h3>Please select a room:</h3>
-            <select name="Month" id="month-select">
-                <option value="room-10">Room 10</option>
-                <option value="room-11">Room 11</option>
-                <option value="room-12">Room 12</option>
-                <option value="room-13">Room 13</option>
-                <option value="room-14">Room 14</option>
-                <option value="room-20">Room 20</option>
-                <option value="room-21">Room 21</option>
-                <option value="room-22">Room 22</option>
-                <option value="room-23">Room 23</option>
-                <option value="room-24">Room 24</option>
-                <option value="room-30">Room 30</option>
-                <option value="room-31">Room 31</option>
-                <option value="room-32">Room 32</option>
-                <option value="room-33">Room 33</option>
-                <option value="room-34">Room 34</option>
+            <select name="Month" id="room-select">
+                <option value="room10">Room 10</option>
+                <option value="room11">Room 11</option>
+                <option value="room12">Room 12</option>
+                <option value="room13">Room 13</option>
+                <option value="room14">Room 14</option>
+                <option value="room20">Room 20</option>
+                <option value="room21">Room 21</option>
+                <option value="room22">Room 22</option>
+                <option value="room23">Room 23</option>
+                <option value="room24">Room 24</option>
+                <option value="room30">Room 30</option>
+                <option value="room31">Room 31</option>
+                <option value="room32">Room 32</option>
+                <option value="room33">Room 33</option>
+                <option value="room34">Room 34</option>
             </select>
             <h3>Please select a month:</h3>
             <select id="month-select">
@@ -57,9 +57,9 @@
             </select>
             <h3>Please enter your username:</h3>
             <form>
-                <input placeholder="In Game Name" type="text" name="screenname">
+                <input placeholder="In Game Name" type="text" name="screenname" id="screenname">
             </form>
-            <button>Submit</button>
+            <button type="submit" onclick="location.href='reservation.html?room='+ document.getElementById('room-select').value+'&month='+document.getElementById('month-select').value+'&name='+document.getElementById('screenname').value;"> Submit</button>
         </div>
         <div>
             <table id="rent-table">
@@ -81,228 +81,228 @@
                 </tr>
                 <tr>
                     <th>Room 10</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room10&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=february"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=march"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=april"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=may"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=june"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=july"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=august"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=september"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=october"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=november"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room10&month=december"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 11</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room11&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 12</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room12&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 13</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room13&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 14</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room14&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 20</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room20&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 21</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room21&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 22</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room22&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 23</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room23&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 24</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room24&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 30</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room30&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 31</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room31&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 32</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room32&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 33</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room33&month=january"><button class="table-button"></button></a></td>
                 </tr>
                 <tr>
                     <th>Room 34</th>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
+                    <td><a href="reservation.html?room=room34&month=january"><button class="table-button"></button></a></td>
                 </tr>
             </table>
         </div>
