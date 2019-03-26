@@ -27,7 +27,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    min-width: 50em;
+    min-width: 35em;
 }
 
 a.nav-link:visited
